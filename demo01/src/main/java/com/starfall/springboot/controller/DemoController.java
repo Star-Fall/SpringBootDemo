@@ -8,14 +8,14 @@ import org.springframework.web.bind.annotation.RestController;
  * @project SpringBootDemo
  * @package com.starfall.springboot.controller
  * @className DemoController
- * @date 2019/4/12 23:35
- * @description todo
+ * @date 2019/4/13 22:42
+ * @description DemoController
  */
 @RestController
 public class DemoController {
 
-    @RequestMapping("demo")
-    public String demo(){
-        return "demo controller";
+    @RequestMapping("/demo")
+    public String demo() {
+        return "demo hello";
     }
 }

@@ -2,19 +2,18 @@ package com.starfall.springboot;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+
 /**
+ * @author StarFall
  * @project SpringBootDemo
  * @package com.starfall.springboot
- * @className Demo02Application
- * @author StarFall
- * @date 2019/4/12 23:41
- * @description Demo02Application
+ * @className Application
+ * @date 2019/4/13 22:41
+ * @description Application
  */
 @SpringBootApplication
-public class Demo02Application {
-
+public class Application {
     public static void main(String[] args) {
-        SpringApplication.run(Demo02Application.class, args);
+        SpringApplication.run(Application.class, args);
     }
-
 }
