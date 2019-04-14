@@ -1,0 +1,22 @@
+#User1
+user:
+  userId: 12
+  userName: userName
+  bool: false
+  date: 2019/04/13
+  map:
+    key1: value1
+    key2: value2
+    key3: value3
+  list:
+    - list01
+    - list02
+    - list03
+    - list04
+  dep:
+    depId: 11
+    depName: IT
+#dateTime、dateStr、boolStr、depNull
+  dateTime: 2001/12/14
+  dateStr: !!str 2019/01/01
+  boolStr: !!str true
