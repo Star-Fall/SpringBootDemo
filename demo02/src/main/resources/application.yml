@@ -1,7 +1,7 @@
 #User1
 user:
-  userId: 12
-  userName: userName
+  userId: ${random.int}
+  userName: ${random.value}
   bool: false
   date: 2019/04/13
   map:
@@ -15,8 +15,22 @@ user:
     - list04
   dep:
     depId: 11
-    depName: IT
+    depName: ${user.userName}IT
 #dateTime、dateStr、boolStr、depNull
   dateTime: 2001/12/14
   dateStr: !!str 2019/01/01
   boolStr: !!str true
+#user2
+spring:
+  profiles:
+    #active: dev2
+---
+server:
+  port: 8082
+spring:
+  profiles: dev2
+---
+server:
+  port: 8083
+spring:
+  profiles: dev3

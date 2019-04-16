@@ -1,5 +1,6 @@
 package com.starfall.springboot;
 
+import com.starfall.springboot.bean.Department;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -46,6 +47,7 @@ public class Demo02ApplicationTests {
         System.out.println("status:" + response.getStatus());
         System.out.println("result:" + response.getContentAsString());
     }
+
     @Test
     public void testGetUserYaml() throws Exception {
         MockHttpServletResponse response = mockMvc.perform(MockMvcRequestBuilders.get("/get/user/yaml").accept(MediaType.APPLICATION_JSON_UTF8))
@@ -56,4 +58,11 @@ public class Demo02ApplicationTests {
         System.out.println("result:" + response.getContentAsString());
     }
 
+    @Autowired
+    public Department department;
+
+    @Test
+    public void testDepartment() {
+        System.out.println(department);
+    }
 }
